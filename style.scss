@@ -1,0 +1,72 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+// variables overrides (customization )
+
+$primary: #2bcb9b;
+$secondary: #b9a889;
+$info: #9c9b93;
+$warning: #122325;
+$light: #ffff;
+$dark: #0a2a30;
+$success: #f9f8f4;
+// $success: #E5E4DF;
+
+/* Common css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.n-flex {
+  display: flex;
+}
+.n-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.n-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+//======== custom heading font ===========
+
+.n-heading-1 {
+  font-size: 64px;
+  line-height: 74px;
+}
+
+.n-heading-2 {
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.n-heading-3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+// ====================//@
+//====Costom-perag========//@at-root
+
+.n-paragraph-1 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.n-paragraph-2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+/* responsive */
+
+//=========== custom max-weight ===========
+@for $max-width from 1 through 1200 {
+  n-max-w-#{$max-width} {
+    max-width: #{$max-width};
+  }
+}
+
+//============== custom utility class generator ================
