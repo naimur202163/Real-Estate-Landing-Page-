@@ -110,4 +110,36 @@ $success: #f9f8f4;
     margin-top: #{$space}px !important;
   }
   // Padding reated
+
+  .n-p-#{$space} {
+    padding: #{$space}px !important;
+  }
+
+  .n-px-#{$space} {
+    padding-left: #{$space}px !important;
+    padding-right: #{$space}px !important;
+  }
+
+  .n-py-#{$space} {
+    padding-top: #{$space}px !important;
+
+    padding-bottom: #{$space}px !important;
+  }
+
+  .n-pl-#{$space} {
+    padding-left: #{$space} px !important;
+  }
+
+  .n-pr-#{$space} {
+    padding-right: #{$space}px !important;
+  }
+  .n-pb-#{$space} {
+    padding-bottom: #{$space}px !important;
+  }
+
+  .n-pt-#{$space} {
+    padding-top: #{$space}px !important;
+  }
+
+  
 }
