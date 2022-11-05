@@ -3,12 +3,12 @@
 
 // variables overrides (customization )
 
-$primary: #2bcb9b;
-$secondary: #b9a889;
-$info: #9c9b93;
+$primary: #0f1b4c;
+$secondary: #4f5361;
+$info: #e6f0ff;
 $warning: #122325;
 $light: #ffff;
-$dark: #0a2a30;
+$dark: #7d8589;
 $success: #f9f8f4;
 // $success: #E5E4DF;
 
@@ -73,60 +73,25 @@ h3 {
 //===============Navigation==========//
 
 nav {
-  background: blue;
-  width: 100%;
-  padding: 1.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  .menu-icon {
-    display: none;
-  }
-
-  ul {
+  height: 40px;
+  background-color: $info;
+  justify-content: space-between;
+  .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 30%;
-
-    li {
-      list-style: none;
-      transition: all 0.2s ease-in-out;
-      a {
-        padding: 0.4rem;
-        text-decoration: none;
-        color: black;
-      }
-    }
-  }
-}
-// Responsives
-@media only screen and (max-width: 650px) {
-  nav {
-    flex-direction: column;
-    .logo {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .menu-icon {
-        display: block;
-      }
-    }
+    justify-content: space-between;
     ul {
-      display: none;
-      flex-direction: column;
-      padding-top: 1rem;
-      width: 100%;
-      li {
-        padding: 0.5rem;
-        text-align: center;
+      display: flex;
+      list-style: none;
+      li a {
+        text-decoration: none;
+        margin-right: 1rem;
       }
     }
   }
 }
-
 //===============Navigation==========//
 
 //=========== custom font weight ===========

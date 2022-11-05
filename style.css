@@ -46,45 +46,22 @@ h3 {
 
 /* responsive */
 nav {
-  background: blue;
-  width: 100%;
-  padding: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  nav .menu-icon {
-    display: none; }
-  nav ul {
+  align-items: center;
+  height: 40px;
+  background-color: #e6f0ff;
+  justify-content: space-between; }
+  nav .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 30%; }
-    nav ul li {
-      list-style: none;
-      transition: all 0.2s ease-in-out; }
-      nav ul li a {
-        padding: 0.4rem;
-        text-decoration: none;
-        color: black; }
-
-@media only screen and (max-width: 650px) {
-  nav {
-    flex-direction: column; }
-    nav .logo {
-      width: 100%;
+    justify-content: space-between; }
+    nav .logo ul {
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      nav .logo .menu-icon {
-        display: block; }
-    nav ul {
-      display: none;
-      flex-direction: column;
-      padding-top: 1rem;
-      width: 100%; }
-      nav ul li {
-        padding: 0.5rem;
-        text-align: center; } }
+      list-style: none; }
+      nav .logo ul li a {
+        text-decoration: none;
+        margin-right: 1rem; }
+
 .n-fw-400 {
   font-weight: 400 !important; }
 
