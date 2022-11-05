@@ -169,11 +169,11 @@ $success: #f9f8f4;
   }
 }
 
-@for $space from 1 through 100 {
-  .n-border-radius- #{$space} {
-    border-radius: #{$space}px !important;
-  }
-}
+// @for $space from 1 through 100 {
+//   .n-border-radius- #{$space} {
+//     border-radius: #{$space}px !important;
+//   }
+// }
 
 @for $space from 1 through 100 {
   .n-border-width-#{$space} {
@@ -192,8 +192,8 @@ $success: #f9f8f4;
 
 @for $space from 1 through 100 {
   @if ($space) {
-    .n-hp-#{space} {
-      height: #{space}+ "%";
+    .n-hp-#{$space} {
+      height: #{$space}+ "%";
     }
   }
 }
