@@ -20,8 +20,14 @@ $success: #f9f8f4;
   padding: 0;
   box-sizing: border-box;
 }
-h3 {
-  color: green;
+button {
+  border: none;
+  background: none;
+}
+.buttons {
+  background-color: #0f1b4c !important;
+  color: #f9f8f4;
+  border-radius: 8px;
 }
 .container {
   width: 1140px;
@@ -71,25 +77,42 @@ h3 {
 /* responsive */
 
 //===============Navigation==========//
+header {
+  background-color: $info;
+}
 
 nav {
+  width: 100%;
+  padding: 1rem;
   display: flex;
-  align-items: center;
-  height: 40px;
-  background-color: $info;
   justify-content: space-between;
+  align-items: center;
   .logo {
+    align-items: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     ul {
+      align-items: center;
       display: flex;
       list-style: none;
-      li a {
-        text-decoration: none;
-        margin-right: 1rem;
-      }
+      margin-left: 4rem;
     }
+    ul li a {
+      text-decoration: none;
+      margin-right: 1.8rem;
+      color: $secondary;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    .button {
+      display: none;
+    }
+    
   }
 }
 //===============Navigation==========//
