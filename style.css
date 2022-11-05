@@ -78,8 +78,13 @@ nav {
       nav .logo .menu-icon {
         display: block; }
     nav ul {
+      display: none;
       flex-direction: column;
-      margin-top: 1rem; } }
+      padding-top: 1rem;
+      width: 100%; }
+      nav ul li {
+        padding: 0.5rem;
+        text-align: center; } }
 .n-fw-400 {
   font-weight: 400 !important; }
 
