@@ -72,6 +72,57 @@ h3 {
 
 //===============Navigation==========//
 
+nav {
+  background: blue;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu-icon {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+
+    li {
+      list-style: none;
+      transition: all 0.2s ease-in-out;
+      a {
+        padding: 0.4rem;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  // Responsives
+}
+
+@media only screen and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu-icon {
+        display: block;
+      }
+    }
+    ul {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  }
+}
+
 //===============Navigation==========//
 
 //=========== custom font weight ===========
